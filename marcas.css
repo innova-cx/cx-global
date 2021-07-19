@@ -800,6 +800,9 @@ header.is-navigation-wrapper {
 .ux-marcas-videoWrapper.mobile {
     display: none;
 }
+ux-marcas-bannerVideo.mobile{
+    display:none;
+}
 /*- - - Mobile ♥ 
 @media only screen and (max-width:400px){
     .ux-is-icon {
