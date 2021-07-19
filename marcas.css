@@ -797,6 +797,9 @@ header.is-navigation-wrapper {
 .c-imgSlider.desk{
     display:none;
 }
+.ux-marcas-videoWrapper.mobile {
+    display: none;
+}
 /*- - - Mobile ♥ 
 @media only screen and (max-width:400px){
     .ux-is-icon {
@@ -825,6 +828,13 @@ header.is-navigation-wrapper {
     }
 } - - - */
 @media only screen and (max-width:800px) {
+    /* Video */
+    .ux-marcas-videoWrapper.mobile {
+        display: block;
+    }
+    .ux-marcas-videoWrapper.desk {
+        display: none;
+    }
     .swiper-wrapper.productSlider > .swiper-slide {
         width: 100% !important;
     }
