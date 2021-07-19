@@ -795,7 +795,7 @@ header.is-navigation-wrapper {
     width: 65%;
 }
 .c-imgSlider.desk{
-    display:none;
+    display:block;
 }
 .ux-marcas-videoWrapper.mobile {
     display: none;
@@ -831,6 +831,9 @@ ux-marcas-bannerVideo.mobile{
     }
 } - - - */
 @media only screen and (max-width:800px) {
+    .c-imgSlider.desk {
+        display: none;
+    }
     /* Video */
     .ux-marcas-videoWrapper.mobile {
         display: block;
@@ -1121,9 +1124,6 @@ ux-marcas-bannerVideo.mobile{
 }
 /*- - - Desktop ♥ - - - */
 @media only screen and (min-width:800px){
-    .c-imgSlider.desk {
-        display: block;
-    }
     /* Section1 */
     .ux-marcas-logotitle {
         font-size: 2vw;
