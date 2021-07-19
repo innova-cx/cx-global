@@ -794,7 +794,9 @@ header.is-navigation-wrapper {
     bottom: -6%;
     width: 65%;
 }
-
+.c-imgSlider.desk{
+    display:none;
+}
 /*- - - Mobile ♥ 
 @media only screen and (max-width:400px){
     .ux-is-icon {
@@ -826,6 +828,9 @@ header.is-navigation-wrapper {
     .swiper-wrapper.productSlider > .swiper-slide {
         width: 100% !important;
     }
+.c-imgSlider.desk{
+    display:block;
+}
     .cx-img-desk{
         display:none;
     }
@@ -1106,6 +1111,9 @@ header.is-navigation-wrapper {
     /* Section1 */
     .ux-marcas-logotitle {
         font-size: 2vw;
+    }
+    .ux-marcas-bannerVideo.mobile{
+        display:none;
     }
     .cx-carousel{
         padding: 0 7%;
