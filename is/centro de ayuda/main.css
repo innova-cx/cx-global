@@ -136,6 +136,9 @@
     height: auto;
     margin-top: 15px;
     margin-bottom: 0;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
 }
 .cx-cdaiv__footer-item {
     width: 100%;
