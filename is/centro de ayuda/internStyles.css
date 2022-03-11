@@ -236,19 +236,19 @@ details[open] > .cx-cdaiv__item{
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: left;
     font-size: 12px;
     font-weight: 600;
 }
 
 /* FOOTER icons container INTERN OPTION */
-.cx-cdaiv__item-footer-icons{
+.cx-cdaiv__item-footer-icon thumbs-ups{
     display: flex;
     justify-content: space-around;
     margin-top: 15px;
 }
-.cx-cdaiv__item-footer-icon{
+.cx-cdaiv__item-footer-icon thumbs-up{
     background: #49a5f4;
     width: 45px;
     height: 45px;
@@ -476,6 +476,32 @@ details[open] > .cx-cdaiv__item{
     display: none;
 }
 /* END MENU MOBILE */
+.ux-btn-message {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+}
+form.ux-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
+}
+form.ux-form > label {
+    margin-bottom: 11px;
+    font-weight: 600;
+}
+.ux-campoMejora {
+    margin: 0 0 10px 0;
+}
+.ux-nps-btn {
+    padding: 5px 15px;
+}
 
 @media screen and (max-width: 320px){
     .cx-cdaiv__item {
