@@ -63,7 +63,18 @@ $(document).ready(function () {
         }
     }
     centroAyuda = new CentroAyuda('https://iss3.innovasport.com/api/centro-ayuda');
-
+    /* NPS */
+    $('body').on('click', '.cx-cdaiv__item-footer-icons', function(e) {
+        //console.log($(e.target.classList)[1]);
+        if ($(e.target.classList)[1] == "thumbs-up") {
+            $(e.target).parent().empty();
+            //console.log($(e.target).parent().siblings())
+            $(e.target).parent().html('<div class="alert alert-success" style="margin-top:0;margin-bottom:0">¡Gracias! Estamos en constante mejora para ti</div>');
+        } else if ($(e.target.classList)[1] == "thumbs-down") {
+            $(e.target).parent().parent().append("<form class='ux-form'><label class=''>¿Por qué?</label><input type='text' question='Pasos para compra' class='ux-campoMejora' id='ux-mejora' name='ux-mejora'><div class='ux-nps-btn' id='ux-enviar'>Enviar</div></form>");
+            $(e.target).parent().empty();
+        }
+    });
     $('body').on('click', '.ux-nps-btn', function(e) {
         console.log('done!');
         e.preventDefault();
@@ -109,17 +120,5 @@ $(".cx-cdaiv__menu-wrapper").click(function (e) {
     ) {
         $(".cx-cdaiv__menu-options").removeClass("active");
         $(".cx-cdaiv__menu-wrapper").removeClass("active");
-    }
-});
-/* NPS */
-$('.cx-cdaiv__item-footer-icons').click(function (e) {
-    //console.log($(e.target.classList)[1]);
-    if ($(e.target.classList)[1] == "thumbs-up") {
-        $(e.target).parent().empty();
-        //console.log($(e.target).parent().siblings())
-        $(e.target).parent().html('<div class="alert alert-success" style="margin-top:0;margin-bottom:0">¡Gracias! Estamos en constante mejora para ti</div>');
-    } else if ($(e.target.classList)[1] == "thumbs-down") {
-        $(e.target).parent().parent().append("<form class='ux-form'><label class=''>¿Por qué?</label><input type='text' question='Pasos para compra' class='ux-campoMejora' id='ux-mejora' name='ux-mejora'><div class='ux-nps-btn' id='ux-enviar'>Enviar</div></form>");
-        $(e.target).parent().empty();
     }
 });
