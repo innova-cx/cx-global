@@ -64,7 +64,7 @@ $(document).ready(function () {
     }
     centroAyuda = new CentroAyuda('https://iss3.innovasport.com/api/centro-ayuda');
 
-    $('.ux-nps-btn').click(function (e) {
+    $('body').on('click', '.ux-nps-btn', function(e) {
         console.log('done!');
         e.preventDefault();
         var input = $(e.target).closest('.ux-form').find('#ux-mejora');
