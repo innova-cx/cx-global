@@ -243,12 +243,13 @@ details[open] > .cx-cdaiv__item{
 }
 
 /* FOOTER icons container INTERN OPTION */
-.cx-cdaiv__item-footer-icon thumbs-ups{
+.cx-cdaiv__item-footer-icons {
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    justify-content: center;
+    gap: 40px;
+    padding: 15px 0 0 0;
 }
-.cx-cdaiv__item-footer-icon thumbs-up{
+.cx-cdaiv__item-footer-icon {
     background: #49a5f4;
     width: 45px;
     height: 45px;

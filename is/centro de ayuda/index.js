@@ -121,5 +121,4 @@ $('.ux-nps-btn').click(function (e) {
     row = centroAyuda.setValue(data);
     var form = $(this).parent()
     $(form).empty();
-    $(form).append("<h3 class='ux-btn-message'>¡Gracias! Estamos en constante mejora para ti</h3>");
 })
