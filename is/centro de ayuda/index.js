@@ -78,7 +78,7 @@ $(document).ready(function () {
         }
         row = centroAyuda.setValue(data);
         var form = $(this).parent()
-        $(form).empty();
+        $(form).html('<div class="alert alert-success" style="margin-top:0;margin-bottom:0">Gracias por tu opinión</div>');
     })
 });
 cx_container = $(".cx-cdaiv__menu-options.active");
@@ -117,7 +117,7 @@ $('.cx-cdaiv__item-footer-icons').click(function (e) {
     if ($(e.target.classList)[1] == "thumbs-up") {
         $(e.target).parent().empty();
         //console.log($(e.target).parent().siblings())
-        $(e.target).parent().parent().append("<h3 class='ux-btn-message'>¡Gracias! Estamos en constante mejora para ti</h3>");
+        $(e.target).parent().html('<div class="alert alert-success" style="margin-top:0;margin-bottom:0">¡Gracias! Estamos en constante mejora para ti</div>');
     } else if ($(e.target.classList)[1] == "thumbs-down") {
         $(e.target).parent().parent().append("<form class='ux-form'><label class=''>¿Por qué?</label><input type='text' question='Pasos para compra' class='ux-campoMejora' id='ux-mejora' name='ux-mejora'><div class='ux-nps-btn' id='ux-enviar'>Enviar</div></form>");
         $(e.target).parent().empty();
