@@ -474,6 +474,40 @@ details[open] > .cx-cdaiv__item{
     display: none;
 }
 /* END MENU MOBILE */
+.ux-btn-message {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0;
+    text-align: center;
+}
+form.ux-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 15px 0;
+    flex-direction: column;
+    align-items: center;
+}
+form.ux-form > label {
+    margin-bottom: 11px;
+    font-weight: 600;
+}
+.ux-campoMejora {
+    margin: 0 0 10px 0;
+}
+.ux-nps-btn {
+    padding: 5px 15px;
+    width: 150px;
+    height: 40px;
+    background: #3698d3;
+    border-radius: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width: 320px){
     .cx-cdaiv__item {
