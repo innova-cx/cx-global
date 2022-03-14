@@ -1,0 +1,287 @@
+/* Variables */
+:root {
+    --title-font-size: 25px;
+    --subtitle-font-size: 18px;
+    --content-font-size: 15px;
+    --content-font-size-small: 12px;
+    --content-font-color: #ffffff;
+    /* Cambiar por tipografia IV */
+    --content-font-family: "Mulish";
+}
+/* GLOBALS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Background color de todo CDA */
+.cx-cdaiv {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
+        linear-gradient(212.02deg, #59d6f9 0.21%, #1a6dcb 82.03%);
+}
+
+/* Styles of Text HEADER */
+.cx-cdaiv__header {
+    position: relative;
+    height: auto;
+    padding: 30px 15px 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Styles of TEXT */
+.cx-cdaiv-text {
+    font-family: var(--content-font-family);
+    color: var(--content-font-color);
+}
+.cx-cdaiv-text.title {
+    font-size: var(--title-font-size);
+    font-weight: 600;
+    line-height: 31px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.cx-cdaiv-text.subtitle {
+    font-size: var(--subtitle-font-size);
+    font-weight: 500;
+    text-align: center;
+    line-height: 23px;
+    letter-spacing: 0.5px;
+}
+.cx-cdaiv-text.contentTitle {
+    font-size: var(--content-font-size);
+    font-weight: 600;
+    text-align: center;
+    line-height: 17px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-right: 0;
+}
+.cx-cdaiv-text.contentSubtitle {
+    font-size: var(--content-font-size-small);
+    font-weight: 500;
+    text-align: center;
+    line-height: 15px;
+    height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+/* Styles Container MAIN MENU CDA IV */
+.cx-cdaiv__body-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 15px;
+    gap: 10px;
+}
+
+/* Styles LINKS INSIDE MAIN MENU CDA IV */
+.cx-cdaiv__body-menu-item {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Styles of icons/images inside MAIN MENU CDA IV */
+.cx-cdaiv__body-menu-item-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cx-cdaiv__item-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cx-cdaiv__item-icon > img {
+    width: 15px;
+    height: 15px;
+}
+
+/* Footer */
+.cx-cdaiv__footer-contact {
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgb(72 138 213 / 50%);
+    border-radius: 10px;
+    margin: auto;
+}
+.cx-cdaiv-text.contentTitle.content {
+    font-weight: 500;
+    margin-top: 20px;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.cx-cdaiv__footer-item {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+.cx-cdaiv__footer-item::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #49a5f4;
+    margin: unset;
+    top: unset;
+    bottom: 0;
+    transform: translate(0, 0);
+}
+.cx-cdaiv__footer-contact-item {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 10px;
+    position: relative;
+    margin: auto;
+}
+.cx-cdaiv__footer-contact-item-icon {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cx-cdaiv__footer-contact-item-text::before {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #49a5f4;
+    margin: 0 10px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.cx-cdaiv__footer-contact-item-text {
+    display: grid;
+    position: relative;
+    padding-left: 20px;
+}
+.cx-cdaiv-text.contentTitle.contact {
+    color: #49a5f4;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    margin-top: 0;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+.cx-cdaiv-text.contentSubtitle.contact {
+    color: #888888;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: auto;
+    font-size: var(--content-font-size);
+    font-weight: 500;
+}
+.cx-cdaiv__footer-us {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 0px 15px 60px 15px;
+}
+.cx-cdaiv-text.contentTitle.us {
+    color: #49a5f4;
+    margin-top: unset;
+    margin-bottom: unset;
+}
+.cx-cdaiv__footer-us-link {
+    background: #ffffff;
+    box-shadow: 0px 2px 10px rgb(72 138 213 / 50%);
+    border-radius: 25px;
+    width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    padding: 15px 15px;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 750px){
+    .cx-cdaiv__body-menu {
+        grid-template-columns: 175px 175px 175px 175px;
+        grid-template-rows: auto auto;
+        justify-content: center;
+    }
+
+    .cx-cdaiv__footer-contact {
+        width: auto;
+        max-width: 680px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .cx-cdaiv__footer-contact-item {
+        margin: unset;
+    }
+
+    .cx-cdaiv__footer-item:nth-last-child(4)::before,
+    .cx-cdaiv__footer-item:nth-last-child(2)::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 100%;
+        background: #49a5f4;
+        margin: unset;
+        top: 0;
+        right: 0;
+        transform: translate(0, 0);
+    }
+
+    .cx-cdaiv__footer-us {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        padding: 0px 15px 60px;
+    }
+
+    .cx-cdaiv__footer-us {
+        justify-content: center;
+    }
+
+    .cx-cdaiv__footer-us-link {
+        margin: unset;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    .cx-cdaiv__body-menu {
+        grid-template-columns: 200px 200px 200px 200px;
+        grid-template-rows: auto auto;
+        gap: unset;
+        column-gap: 20px;
+        justify-content: center;
+    }
+}
