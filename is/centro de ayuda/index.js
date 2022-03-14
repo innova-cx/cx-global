@@ -80,10 +80,11 @@ $(document).ready(function () {
         e.preventDefault();
         var input = $(e.target).closest('.ux-form').find('#ux-mejora');
         var val = input.val();
-        var question = input.attr('question')
+        var type = $('.cx-cdaiv__body').attr('type');
+        var question = input.attr('question');
         console.log(val, question);
         data = {
-            'type': 'compras-linea',
+            'type': type,
             'field': question,
             'value': val,
         }
