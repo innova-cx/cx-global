@@ -22,7 +22,8 @@
     width: 15px;
     position: absolute;
     right: 20px;
-    bottom: 17px;
+    bottom: 50%;
+    transform: translate(0, 50%);
     align-content: center;
     display: flex;
     align-items: center;
