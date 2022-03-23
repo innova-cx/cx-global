@@ -13,6 +13,22 @@
 .cx-cdaiv__item.outer::-webkit-details-marker {
     display: none;
 }
+.cx-cdaiv__item-icon > img {
+    height: 15px;
+    width: 15px;
+}
+.cx-cdaiv__item-icon {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    right: 20px;
+    bottom: 17px;
+    align-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
 
 /* Background color de todo CDA */
 .cx-cdaiv {
