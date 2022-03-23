@@ -9,6 +9,11 @@
     padding: 0;
 }
 
+/* OS Default Styles Fix */
+.cx-cdaiv__item.outer::-webkit-details-marker {
+    display: none;
+}
+
 /* Background color de todo CDA */
 .cx-cdaiv {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.07)),
