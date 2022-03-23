@@ -15,15 +15,15 @@ $(document).ready(function () {
             $("#cx_envios").addClass("active");
             break;
 
-        case "/forma-de-pago":
+        case "/metodos-de-pago":
             $("#cx_pagos").addClass("active");
             break;
 
-        case "/cuenta":
+        case "/acerca-de-tu-cuenta":
             $("#cx_tuCuenta").addClass("active");
             break;
 
-        case "/eventos-carreras":
+        case "/boletos-y-carreras":
             $("#cx_eventos").addClass("active");
             break;
 
