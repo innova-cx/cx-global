@@ -44,6 +44,7 @@
     margin: auto;
     max-width: 900px;
     column-gap: 20px;
+    align-items: start;
 }
 .cx-cdaiv__menu-item{
     width: 100%;
@@ -502,14 +503,6 @@ form.ux-form > label {
 }
 .ux-nps-btn {
     padding: 5px 15px;
-    width: 150px;
-    height: 40px;
-    background: #3698d3;
-    border-radius: 60px;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 @media screen and (max-width: 320px){
