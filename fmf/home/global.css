@@ -275,6 +275,10 @@ h2.fmf__title.cx__color-black.cx__align-center {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    h2.fmf__title.cx__color-black.cx__align-center {
+        height: 90px;
+        line-height: 40px;
+    }
 }
 @media screen and (min-width: 992px) {
     :root {
