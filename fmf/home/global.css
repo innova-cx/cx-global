@@ -293,6 +293,7 @@ div.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-c
     .c-scrolling-card-content > .fmf__title {
         margin-top: 20px;
         height: 60px;
+        line-height: 30px;
         display: flex;
         align-items: center;
     }
