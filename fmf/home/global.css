@@ -182,7 +182,7 @@ div.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-c
     position: absolute;
     top: -14px;
 }
-h2.fmf__title.cx__color-black.cx__align-center {
+.c-scrolling-card-content > .fmf__title {
     height: 50px;
     padding: 0 10px;
     line-height: 25px;
@@ -275,7 +275,7 @@ h2.fmf__title.cx__color-black.cx__align-center {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    h2.fmf__title.cx__color-black.cx__align-center {
+    .c-scrolling-card-content > .fmf__title {
         height: 90px;
         line-height: 40px;
     }
