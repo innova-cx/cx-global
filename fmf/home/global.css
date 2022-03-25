@@ -178,7 +178,17 @@ div.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-c
     left:15px;
     bottom:20px;
 }
-
+.c-scrolling-card-content > .fmf__label {
+    position: absolute;
+    top: -14px;
+}
+h2.fmf__title.cx__color-black.cx__align-center {
+    height: 50px;
+    padding: 0 10px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+}
 /* Media Heberto iphone 5 */
 @media only screen and (min-width:350px){
     .cx-fmf__partners-wrapper {
@@ -278,6 +288,9 @@ div.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-c
     }
     .c-scrolling-card-content > .fmf__title {
         margin-top: 20px;
+        height: 60px;
+        display: flex;
+        align-items: center;
     }
     .cx-fmf__partners-wrapper {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
