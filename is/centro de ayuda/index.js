@@ -74,7 +74,7 @@ $(".cx-cdaiv__menu-item").click(function (e) {
         $(".cx-cdaiv__menu-item").removeClass("active");
         $(this).addClass("active");
         $(".cx-cdaiv__menu-options").addClass("chosen");
-        //$(".cx-cdaiv__menuMobile").addClass("active");
+        $(".cx-cdaiv__menuMobile").addClass("active");
         $(".cx-cdaiv__menu-options").removeClass("active");
         $(".cx-cdaiv__menu-wrapper").removeClass("active");
     }
