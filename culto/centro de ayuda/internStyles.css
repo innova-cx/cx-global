@@ -129,13 +129,13 @@
 }
 
 /* TEXT inside OPTIONS */
-.cx-cdaiv-text.contentTitle{
+.cx-cdaiv-text.contentTitle {
     color: #B59368;
     height: auto;
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: left;
     font-size: 15px;
 }
@@ -481,6 +481,22 @@ details[open] > .cx-cdaiv__item{
     pointer-events: none;
 }
 /* END MENU MOBILE */
+.ux-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#ux-enviar {
+    margin-top: 15px;
+    width: 100px;
+    height: 35px;
+    background: #94713d;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}
 
 
 @media screen and (max-width: 320px){
