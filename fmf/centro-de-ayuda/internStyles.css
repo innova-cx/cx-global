@@ -551,7 +551,7 @@ form.ux-form > label {
         max-width: 680px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        /*grid-template-rows: 1fr 1fr;*/
     }
 
     .cx-cdaiv__footer-contact-item{
