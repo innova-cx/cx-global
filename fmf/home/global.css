@@ -308,7 +308,7 @@ div.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-c
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr;
         max-width: 1000px;
-        margin-left: 60px;
+        /*margin-left: 60px;*/
     }
     .cx-fmf__partners-item-wrapper > div {
         width: 90px;
