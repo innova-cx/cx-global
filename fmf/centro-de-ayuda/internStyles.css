@@ -625,3 +625,11 @@ form.ux-form > label {
         max-width: 900px;
     }
 }
+
+/*fix etiqueta summary*/
+details[open] > summary::-webkit-details-marker {
+    list-style: none!important;
+}
+summary::-webkit-details-marker {
+display: none
+}
