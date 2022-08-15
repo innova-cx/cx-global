@@ -40,7 +40,7 @@
 }
 .cx-cdaiv__menu-options{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
     justify-content: center;
     margin: auto;
@@ -551,7 +551,7 @@ form.ux-form > label {
         max-width: 680px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        /*grid-template-rows: 1fr 1fr;*/
     }
 
     .cx-cdaiv__footer-contact-item{
@@ -624,4 +624,12 @@ form.ux-form > label {
         width: auto;
         max-width: 900px;
     }
+}
+
+/*fix etiqueta summary*/
+details[open] > summary::-webkit-details-marker {
+    list-style: none!important;
+}
+summary::-webkit-details-marker {
+display: none
 }
