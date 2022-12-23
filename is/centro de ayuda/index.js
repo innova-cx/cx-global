@@ -142,6 +142,6 @@ $('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function(e) {
     }
     console.log(data);
     row = centroAyuda.setValue(data);
-    var form = $(this).parent()
-    x$(form).empty();
+    var form = $(this).parent();
+    $(form).empty();
 });
