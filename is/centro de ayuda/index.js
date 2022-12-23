@@ -121,13 +121,14 @@ $('.cx-cdaiv__item-footer-icons').click(function (e) {
     var form = $(this).parent()
     $(form).empty();
 })*/
-$('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function() {
-    console.log('done!');
+$('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function(e) {
+    console.log('im in!');
     e.preventDefault();
     var input = $(e.target).closest('.ux-form').find('#ux-mejora');
     var val = input.val();
     var question = input.attr('question')
-    console.log(val, question);
+    console.log('done with vars!');
+    console.log(input, val, question);
     data = {
         'type': 'compras-linea',
         'field': question,
