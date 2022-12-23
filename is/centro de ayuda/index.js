@@ -124,17 +124,24 @@ $('.cx-cdaiv__item-footer-icons').click(function (e) {
 $('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function(e) {
     console.log('im in!');
     e.preventDefault();
+
     var input = $(e.target).closest('.ux-form').find('#ux-mejora');
     var val = input.val();
-    var question = input.attr('question')
+    var question = input.attr('question');
+    var sitio = window.location.pathname;
+
     console.log('done with vars!');
-    console.log(input, val, question);
+    console.log(input);
+    console.log( val);
+    console.log(question);
+
     data = {
-        'type': 'compras-linea',
+        'type': sitio,
         'field': question,
         'value': val,
     }
+    console.log(data);
     row = centroAyuda.setValue(data);
     var form = $(this).parent()
-    $(form).empty();
+    x$(form).empty();
 });
