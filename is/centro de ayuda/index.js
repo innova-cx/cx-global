@@ -42,8 +42,8 @@ $(document).ready(function () {
                 type: "GET",
                 dataType: "json",
                 success: function(respuesta){
-                    //respuesta.id
-                    //respuesta.value
+                    respuesta.id
+                    respuesta.value
                 }
             });
         }
@@ -54,8 +54,8 @@ $(document).ready(function () {
                 type: "POST",
                 dataType: "json",
                 success: function(respuesta){
-                    //respuesta.id
-                    //respuesta.value
+                    respuesta.id
+                    respuesta.value
                 }
             });
         }
