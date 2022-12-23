@@ -105,7 +105,7 @@ $('.cx-cdaiv__item-footer-icons').click(function (e) {
         $(e.target).parent().empty();
     }
 });
-$('.ux-nps-btn').click(function (e) {
+/*$('.ux-nps-btn').click(function (e) {
     console.log('done!');
     e.preventDefault();
     var input = $(e.target).closest('.ux-form').find('#ux-mejora');
@@ -120,8 +120,8 @@ $('.ux-nps-btn').click(function (e) {
     row = centroAyuda.setValue(data);
     var form = $(this).parent()
     $(form).empty();
-})
-$('.cx-cdaiv__item-footer').on('click', 'ux-nps-btn', function() {
+})*/
+$('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function() {
     console.log('done!');
     e.preventDefault();
     var input = $(e.target).closest('.ux-form').find('#ux-mejora');
@@ -135,4 +135,5 @@ $('.cx-cdaiv__item-footer').on('click', 'ux-nps-btn', function() {
     }
     row = centroAyuda.setValue(data);
     var form = $(this).parent()
-    $(form).empty();});
+    $(form).empty();
+});
