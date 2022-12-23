@@ -121,3 +121,18 @@ $('.ux-nps-btn').click(function (e) {
     var form = $(this).parent()
     $(form).empty();
 })
+$('.cx-cdaiv__item-footer').on('click', 'ux-nps-btn', function() {
+    console.log('done!');
+    e.preventDefault();
+    var input = $(e.target).closest('.ux-form').find('#ux-mejora');
+    var val = input.val();
+    var question = input.attr('question')
+    console.log(val, question);
+    data = {
+        'type': 'compras-linea',
+        'field': question,
+        'value': val,
+    }
+    row = centroAyuda.setValue(data);
+    var form = $(this).parent()
+    $(form).empty();});
