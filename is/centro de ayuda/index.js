@@ -127,7 +127,8 @@ $('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function(e) {
 
     var input = $(e.target).closest('.ux-form').find('#ux-mejora');
     var val = input.val();
-    var question = input.attr('question');
+    //var question = input.attr('question');
+    var question = $(e.target).closest('.ux-form').closest('.cx-cdaiv__item-footer').attr('question');
     var sitio = window.location.pathname;
 
     console.log('done with vars!');
