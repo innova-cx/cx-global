@@ -96,9 +96,10 @@ $(".cx-cdaiv__menu-wrapper").click(function (e) {
 $('.cx-cdaiv__item-footer-icons').click(function (e) {
     //console.log($(e.target.classList)[1]);
     if ($(e.target.classList)[1] == "thumbs-up") {
+        $(e.target).parent().parent().append("<h3 class='ux-btn-message'>¡Gracias! Estamos en constante mejora para ti</h3>");
         $(e.target).parent().empty();
         //console.log($(e.target).parent().siblings())
-        $(e.target).parent().parent().append("<h3 class='ux-btn-message'>¡Gracias! Estamos en constante mejora para ti</h3>");
+        
     } else if ($(e.target.classList)[1] == "thumbs-down") {
         $(e.target).parent().parent().append("<form class='ux-form'><label class=''>¿Por qué?</label><input type='text' question='Pasos para compra' class='ux-campoMejora' id='ux-mejora' name='ux-mejora'><input type='submit' class='ux-nps-btn' value='Enviar' id='ux-enviar'></form>");
         $(e.target).parent().empty();
