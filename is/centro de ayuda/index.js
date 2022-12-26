@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log(window.location.pathname);
     const cx_current_URL = window.location.pathname;
 
     switch (cx_current_URL) {
@@ -42,8 +41,8 @@ $(document).ready(function () {
                 type: "GET",
                 dataType: "json",
                 success: function(respuesta){
-                    respuesta.id
-                    respuesta.value
+                    //respuesta.id
+                    //respuesta.value
                 }
             });
         }
@@ -54,8 +53,8 @@ $(document).ready(function () {
                 type: "POST",
                 dataType: "json",
                 success: function(respuesta){
-                    respuesta.id
-                    respuesta.value
+                    //respuesta.id
+                    //respuesta.value
                 }
             });
         }
@@ -131,21 +130,14 @@ $('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function(e) {
     var question = $(e.target).closest('.ux-form').closest('.cx-cdaiv__item-footer').attr('question');
     var sitio = window.location.pathname;
 
-    console.log('done with vars!');
-    console.log(input);
-    console.log( val);
-    console.log(question);
-
     data = {
         'type': sitio,
         'field': question,
         'value': val,
     }
-    console.log(data);
     row = centroAyuda.setValue(data);
-    console.log(row);
     centroAyuda.getValue(data);
 
     var form = $(this).parent();
-    $(form).empty();
+    $(form).html('<div class="alert alert-success" style="margin-top:0;margin-bottom:0">Gracias por tu opinión</div>');
 });
