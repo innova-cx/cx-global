@@ -1,5 +1,4 @@
 $(document).ready(function () {
-    console.log(window.location.pathname);
     const cx_current_URL = window.location.pathname;
 
     switch (cx_current_URL) {
@@ -96,15 +95,16 @@ $(".cx-cdaiv__menu-wrapper").click(function (e) {
 $('.cx-cdaiv__item-footer-icons').click(function (e) {
     //console.log($(e.target.classList)[1]);
     if ($(e.target.classList)[1] == "thumbs-up") {
+        $(e.target).parent().parent().append("<h3 class='ux-btn-message'>¡Gracias! Estamos en constante mejora para ti</h3>");
         $(e.target).parent().empty();
         //console.log($(e.target).parent().siblings())
-        $(e.target).parent().parent().append("<h3 class='ux-btn-message'>¡Gracias! Estamos en constante mejora para ti</h3>");
+        
     } else if ($(e.target.classList)[1] == "thumbs-down") {
         $(e.target).parent().parent().append("<form class='ux-form'><label class=''>¿Por qué?</label><input type='text' question='Pasos para compra' class='ux-campoMejora' id='ux-mejora' name='ux-mejora'><input type='submit' class='ux-nps-btn' value='Enviar' id='ux-enviar'></form>");
         $(e.target).parent().empty();
     }
 });
-$('.ux-nps-btn').click(function (e) {
+/*$('.ux-nps-btn').click(function (e) {
     console.log('done!');
     e.preventDefault();
     var input = $(e.target).closest('.ux-form').find('#ux-mejora');
@@ -119,4 +119,24 @@ $('.ux-nps-btn').click(function (e) {
     row = centroAyuda.setValue(data);
     var form = $(this).parent()
     $(form).empty();
-})
+})*/
+$('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function(e) {
+    e.preventDefault();
+
+    var input = $(e.target).closest('.ux-form').find('#ux-mejora');
+    var val = input.val();
+    //var question = input.attr('question');
+    var question = $(e.target).closest('.ux-form').closest('.cx-cdaiv__item-footer').attr('question');
+    var sitio = window.location.pathname;
+
+    data = {
+        'type': sitio,
+        'field': question,
+        'value': val,
+    }
+    row = centroAyuda.setValue(data);
+    centroAyuda.getValue(data);
+
+    var form = $(this).parent();
+    $(form).html('<div class="alert alert-success" style="margin-top:0;margin-bottom:0">Gracias por tu opinión</div>');
+});
