@@ -121,7 +121,6 @@ $('.cx-cdaiv__item-footer-icons').click(function (e) {
     $(form).empty();
 })*/
 $('.cx-cdaiv__item-footer').on('click', '.ux-nps-btn', function(e) {
-    console.log('im in!');
     e.preventDefault();
 
     var input = $(e.target).closest('.ux-form').find('#ux-mejora');
