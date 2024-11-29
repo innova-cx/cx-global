@@ -300,6 +300,7 @@ details[open] > .cx-cdaiv__item{
     height: auto;
     margin-top: 15px;
     margin-bottom: 0;
+    justify-content: center;
 }
 .cx-cdaiv__footer-item {
     width: 100%;
