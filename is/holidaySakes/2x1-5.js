@@ -1,1 +1,1 @@
-var dosporunoymedio = [337277,337270]
+var dosporunoymedio = [337277,337270];
