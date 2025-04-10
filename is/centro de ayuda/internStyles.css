@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 /* Variables */
 :root {
     --content-font-color: #ffffff;
     --content-font-family: "Mulish";
+    --ff-inter: "Inter", serif;
 }
 /* GLOBALS */
 * {
@@ -92,8 +95,8 @@
 .cx-cdaiv-textMenu{
     color: var(--content-font-color);
     font-size: 15px;
-    font-weight: 600;
-    font-family: var(--content-font-family);
+    font-weight: 500;
+    font-family: var(--ff-inter);
     text-align: center;
     line-height: 17px;
     display: flex;
@@ -105,19 +108,19 @@
 
 /* TEXT inside HADER */
 .cx-cdaiv-text {
-    font-family: var(--content-font-family);
+    font-family: var(--ff-inter);
     color: var(--content-font-color);
 }
 .cx-cdaiv-text.title {
     font-size: 25px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 31px;
     text-align: center;
     letter-spacing: 1px;
 }
 .cx-cdaiv-text.subtitle {
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     line-height: 23px;
     letter-spacing: 0.5px;
@@ -157,10 +160,11 @@
     justify-content: space-between;
     text-align: left;
     font-size: 15px;
+    font-weight: 400;
 }
 .cx-cdaiv-text.contentSubtitle{
     color: #000000;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
     height: auto;
@@ -263,7 +267,7 @@ details[open] > .cx-cdaiv__item{
     justify-content: center;
     text-align: left;
     font-size: 12px;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 /* FOOTER icons container INTERN OPTION */
@@ -295,7 +299,7 @@ details[open] > .cx-cdaiv__item{
     margin: auto;
 }
 .cx-cdaiv-text.contentTitle.content {
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 20px;
     height: auto;
     margin-top: 15px;
@@ -358,7 +362,7 @@ details[open] > .cx-cdaiv__item{
     justify-content: flex-start;
     height: auto;
     margin-top: 0;
-    font-weight: 500;
+    font-weight: 400;
     margin-bottom: 0;
 }
 .cx-cdaiv-text.contentSubtitle.contact {
@@ -367,7 +371,7 @@ details[open] > .cx-cdaiv__item{
     justify-content: flex-start;
     height: auto;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 400;
 }
 .cx-cdaiv__footer-us {
     display: flex;
@@ -379,7 +383,7 @@ details[open] > .cx-cdaiv__item{
     color: #49a5f4;
     margin-top: unset;
     margin-bottom: unset;
-    font-weight: 600;
+    font-weight: 500;
 }
 .cx-cdaiv__footer-us-link {
     background: #ffffff;
@@ -492,7 +496,7 @@ details[open] > .cx-cdaiv__item{
 .cx-cdaiv__menu-options.active > .cx-cdaiv__menu-item > .cx-cdaiv__menu-item-text >
 .cx-cdaiv-textMenu {
     color: #4996e3;
-    font-weight: 500;
+    font-weight: 400;
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -519,7 +523,7 @@ form.ux-form {
 }
 form.ux-form > label {
     margin-bottom: 11px;
-    font-weight: 600;
+    font-weight: 500;
 }
 .ux-campoMejora {
     margin: 0 0 10px 0;
